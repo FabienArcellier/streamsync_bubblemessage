@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "streamsync_bubblemessage"
+description = "demo / template to distribute an extension for streamsync on pypi"
+authors = ["Fabien Arcellier <fabien.arcellier@gmail.com>"]
+license = "MIT"
+version = "0.0.1"
+readme = "README.md"
+packages = [{include = "streamsync_bubblemessage", from = "src"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
